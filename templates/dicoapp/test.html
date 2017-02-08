@@ -1,0 +1,354 @@
+<html><head>
+  <title>DICO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/slick/slick-theme.css">
+  <script type="text/javascript" src="/static/js/dico.js"></script>
+  <script type="text/javascript" src="/static/js/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/datepicker/bootstrap-datepicker3.min.css">
+  <script type="text/javascript" src="/static/js/datepicker/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="/static/js/datepicker/bootstrap-datepicker.es.min.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.timepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/jquery.timepicker.css">
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+</head>
+<body>
+   <div class="container header-container fixed-container">
+      <div class="row">
+        <header class="fixed">
+          <div class="logo">
+            <img src="/static/images/logo-dico.png">
+          </div>
+          <div class="nav-work">
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#workModal">trabaja con nosotros</button>
+            <div class="social-networks">
+              <div class="icns">
+                <a href="https://www.facebook.com/dico.sas" target="_blank" class="icn icn-facebook"></a>
+              </div>
+            </div>
+            <nav class="navbar navbar-default">
+                <div class="menu-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li><a href="#beneficios">beneficios</a></li>
+                  <li><a href="#como-funciona">¿Cómo Funciona?</a></li>
+                  <li><a href="#servicios">servicios</a></li>
+                  <li><a href="#contactanos">contáctanos</a></li>
+                </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+    </div>
+
+  <section class="hero-slider" style="padding-top: 90px;">
+  	<div class="my-slider slick-initialized slick-slider slick-dotted" role="toolbar">
+	  <div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5070px; transform: translate3d(-4056px, 0px, 0px); transition: transform 700ms ease 0s;" role="listbox"><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1014px;" tabindex="-1">
+      <img src="/static/images/sliders/slide3-mobile.jpg" class="visible-xs-block">
+      <img src="/static/images/sliders/slide3.jpg" class="hidden-xs">
+    </div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1014px;" tabindex="-1" role="option" aria-describedby="slick-slide00">
+      <img src="/static/images/sliders/slide1-mobile.jpg" class="visible-xs-block">
+      <img src="/static/images/sliders/slide1.jpg" class="hidden-xs">
+    </div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1014px;" tabindex="-1" role="option" aria-describedby="slick-slide01">
+      <img src="/static/images/sliders/slide2-mobile.jpg" class="visible-xs-block">
+      <img src="/static/images/sliders/slide2.jpg" class="hidden-xs">
+    </div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1014px;" tabindex="-1" role="option" aria-describedby="slick-slide02">
+      <img src="/static/images/sliders/slide3-mobile.jpg" class="visible-xs-block">
+      <img src="/static/images/sliders/slide3.jpg" class="hidden-xs">
+    </div><div class="slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" style="width: 1014px;" tabindex="-1">
+      <img src="/static/images/sliders/slide1-mobile.jpg" class="visible-xs-block">
+      <img src="/static/images/sliders/slide1.jpg" class="hidden-xs">
+    </div></div></div>
+	  
+	  
+	<ul class="slick-dots" style="" role="tablist"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01" class=""><button type="button" data-role="none" role="button" tabindex="0">2</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02" class=""><button type="button" data-role="none" role="button" tabindex="0">3</button></li></ul></div>
+  </section>
+
+  <section class="beneficios">
+    <div class="top-navbar" id="beneficios"></div>
+    <div class="container">
+      <div class="row">
+      	<div class="intro-text">
+      		Somos una plataforma de soluciones integrales a problemas cotidianos. <span>Te conectamos con la solución</span>
+        </div>
+      	<h2 class="title-section benefit-title visible-xs-block">¿Cómo hacemos la diferencia?</h2>
+        <div class="benefits-imgs" data-spy="scroll" data-target="#myScrollspy" data-offset="70" style="overflow-y: auto;">
+          <nav class="nav-benefits col-md-5 visible-md-block visible-lg-block" id="myScrollspy">
+            <ul class="nav">
+              <li class="tiempo active"><a href="#beneficio1-img"><span></span>Tiempo</a></li>
+              <li class="calidad"><a href="#beneficio2-img"><span></span>Calidad</a></li>
+              <li class="confianza"><a href="#beneficio3-img"><span></span>Confianza</a></li>
+              <li class="garantia"><a href="#beneficio4-img"><span></span>Garantía</a></li>
+            </ul>
+          </nav>
+          <div class="img-scroll col-xs-12 col-sm-12 col-md-7">
+            <div id="beneficio1-img" style="">
+              <img src="/static/images/beneficios/beneficio1-m.jpg" class="visible-xs-block">
+              <img src="/static/images/beneficios/beneficio1.jpg" class="hidden-xs">
+            </div>
+            <div id="beneficio2-img" style="">
+              <img src="/static/images/beneficios/beneficio2-m.jpg" class="visible-xs-block">
+              <img src="/static/images/beneficios/beneficio2.jpg" class="hidden-xs">
+            </div>
+            <div id="beneficio3-img" style="">
+              <img src="/static/images/beneficios/beneficio3-m.jpg" class="visible-xs-block">
+              <img src="/static/images/beneficios/beneficio3.jpg" class="hidden-xs">
+            </div>
+            <div id="beneficio4-img" style="">
+              <img src="/static/images/beneficios/beneficio4-m.jpg" class="visible-xs-block">
+              <img src="/static/images/beneficios/beneficio4.jpg" class="hidden-xs">
+            </div>
+          </div>
+      	</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="como-funciona">
+    <div class="top-navbar" id="como-funciona"></div>
+    <h2 class="title-section works-title">¿Cómo funciona?</h2>
+    <div class="container">
+      <div class="row">
+        <div class="works-grid">
+          <div class="icon-work problema">
+            <span class="img-icon"></span>
+            <span class="text-icon">Tienes un problema</span>
+          </div>
+          <div class="icon-work servicio">
+            <span class="img-icon"></span>
+            <span class="text-icon">Selecciona tu servicio</span>
+          </div>
+          <div class="icon-work pago">
+            <span class="img-icon"></span>
+            <span class="text-icon">Paga tu reserva</span>
+          </div>
+          <div class="icon-work maestro">
+            <span class="img-icon"></span>
+            <span class="text-icon">Conoce tu maestro</span>
+          </div>
+          <div class="icon-work recibe">
+            <span class="img-icon"></span>
+            <span class="text-icon">Recibe tu servicio</span>
+          </div>
+          <div class="icon-work calificacion">
+            <span class="img-icon"></span>
+            <span class="text-icon">Califícanos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="servicios">
+      <h2 class="title-section services-title">Encuentra un maestro dico</h2>
+      <div class="container">
+        <div class="row">
+          <h3 class="subtitle-section services-subtitle">¿En que te podemos
+            ayudar?</h3>
+          <div class="row">
+            <div class="services-grid">
+              <table width="95%" height="auto" border="0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <center>
+                        <div class="service-item"> <button align="center" data-target="#serviceModal" data-toggle="modal" type="button" name="imageField">
+                            <img src="/static/images/servicios/cerrajero.jpg" width="160" height="160" border="2"></button> </div>
+                      </center>
+                    </td>
+                    <td>
+                      <center>
+                        <div class="service-item"> <button align="center" data-target="#serviceModal" data-toggle="modal" type="button" name="imageField">
+                            <img src="/static/images/servicios/electrico.jpg" width="160" height="160" border="2"></button></div>
+                      </center>
+                    </td>
+                    <td>
+                      <center>
+                        <div class="service-item"> <button align="center" data-target="#serviceModal" data-toggle="modal" type="button" name="imageField">
+                            <img src="/static/images/servicios/pintor.jpg" width="160" height="160" border="2"></button></div>
+                      </center>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="more-info">
+          <h2 class="title-section services-title">Servicios Especializados</h2>
+          <div class="icon-service remodelaciones" onclick="contactTest();"> <span class="img-icon"></span>
+            <div class="text-icon">Remodelaciones</div> </div>
+          <div class="icon-service civiles" onclick="contactTest();"> <span class="img-icon"></span> <span class="text-icon">Obras Civiles</span> </div>
+          <div class="icon-service locativas" onclick="contactTest();"> <span class="img-icon"></span> <span class="text-icon">Obras Locativas</span> </div>
+        </div>
+      </div>
+    </section>
+  <section class="contactanos">
+    <div class="top-navbar" id="contactanos"></div>
+    <div class="container">
+      <div class="row">
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#contactModal">contactanos</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer-content">
+          <div class="about-us">
+            <h4><span>nosotros</span></h4>
+            <p>Nuestra principal motivación es romper con el estereotipo que la sociedad tiene frente al gremio de la construcción, con un enfoque basado en el recurso humano como pilar de la realidad de nuestro sector.</p>
+          </div>
+          <div class="contact">
+            <h4><span>contacto</span></h4>
+            <p><span class="title-contact">teléfono:</span><span class="info-contact">+57 3175382761<br>+57 3208389441</span></p>
+            <p><span class="title-contact">email:</span><span class="info-contact">dicosas@gmail.com</span></p>
+          </div>
+          <div class="social">
+            <h4><span>redes sociales</span></h4>
+            <a href="https://www.facebook.com/dico.sas" target="_blank" class="footer-facebook"></a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="dicosas">DICO SAS ® 2016</div>
+  </footer>
+
+
+<div class="modal fade workmodal" id="workModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Trabaja con nosotros</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+            <fieldset>
+              <legend>Tu experiencia</legend>
+              <input name="name" placeholder="Nombre completo" required="" type="text">
+              <input name="phone" placeholder="Celular" required="" type="number">
+              <textarea name="desc" placeholder="Habilidades específicas" required=""></textarea>
+              <legend>Hoja de vida</legend>
+              <div class="upload-cv">
+                <div class="fileUpload btn btn-primary">
+                    <span>Subir archivo</span>
+                    <input class="upload" name="file" type="file">
+                </div>
+                <div class="value-file"></div>
+              </div>
+              <button type="submit" class="btn btn-default btn-info">enviar</button>
+            </fieldset>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="modal fade contactmodal" id="contactModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Contáctanos</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+            <fieldset>
+              <input name="name" placeholder="Nombre completo" required="" type="text">
+              <input name="phone" placeholder="Celular" required="" type="number">
+              <input name="email" placeholder="Email" required="" type="email"> 
+              <textarea name="desc" placeholder="Cuentanos en que te podemos ayudar" required=""></textarea>
+              <button type="submit" class="btn btn-default btn-info">enviar</button>
+            </fieldset>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="modal fade servicesmodal" id="serviceModal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- TODO loading gif -->
+        <span class="loading">Cargando...</span>
+
+
+        <div class="service-detail">
+          <div class="service-item">
+              <span class="title-service" id="serviceName"></span>
+              <img src="" id="serviceImage">
+          </div>
+          <p id="serviceDesc"></p>
+        </div>
+        <div class="form-service">
+          <form>
+            <fieldset>
+              <legend>Datos personales</legend>
+              <input name="name" placeholder="Nombre completo" required="" type="text">
+              <input name="celular" placeholder="Celular" required="" type="number">
+              <input name="direccion" placeholder="Dirección" required="" type="text">
+              <input name="email" placeholder="Email" required="" type="email">
+              <select id="serviceSubservices">
+                <option value="" required="">Selecciona tu servicio</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Fecha / Hora</legend>
+              <div class="services-days">
+                <div class="day-select">
+                  <div class="sandbox-container">
+                    <input placeholder="Selecciona la fecha" required="" type="text">
+                  </div>
+                  <div class="inputs-time">
+                    <input class="time hora-inicio ui-timepicker-input" placeholder="hora" required="" autocomplete="off" type="text">
+                  </div>
+                  <span>a</span>
+                  <div class="inputs-time">
+                    <input class="time hora-final ui-timepicker-input" placeholder="hora" required="" autocomplete="off" type="text">
+                  </div><br>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default btn-append">agregar día</button>
+              <div class="label-group">
+                <label class="price-label">valor//servicio $</label>
+                <input name="price" id="servicePrice" type="number">
+              </div>
+              <div class="label-group">
+                <label class="price-label">valor//reserva $</label>
+                <input name="reserve" value="10.000" type="number">
+              </div>
+              <button type="button" class="btn btn-default btn-info">reserva ahora</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body></html>
