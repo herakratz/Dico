@@ -1,0 +1,1215 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/comfortaa-bold/Comfortaa-Bold.eot');
+    src: url('../fonts/comfortaa-bold/Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/comfortaa-bold/Comfortaa-Bold.woff2') format('woff2'),
+        url('../fonts/comfortaa-bold/Comfortaa-Bold.woff') format('woff'),
+        url('../fonts/comfortaa-bold/Comfortaa-Bold.ttf') format('truetype'),
+        url('../fonts/comfortaa-bold/Comfortaa-Bold.svg#Comfortaa-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/comfortaa-light/Comfortaa-Light.eot');
+    src: url('../fonts/comfortaa-light/Comfortaa-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/comfortaa-light/Comfortaa-Light.woff') format('woff'),
+        url('../fonts/comfortaa-light/Comfortaa-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/comfortaa/Comfortaa.eot');
+    src: url('../fonts/comfortaa/Comfortaa.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/comfortaa/Comfortaa.woff') format('woff'),
+        url('../fonts/comfortaa/Comfortaa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.round-button {
+	width:25%;
+}
+.round-button-circle {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid #cfdcec;
+    overflow:hidden;
+    
+    background-image: url("../images/servicios/aseo.png"); 
+    box-shadow: 0 0 3px gray;
+}
+.round-button-circle:hover {
+	background-image: url("../images/servicios/aseo.png");
+}
+.round-button a {
+    display:block;
+	float:left;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+    
+	text-align:center;
+	color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+body{
+	font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+}
+body:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    background-image: url("../images/line-top-mobile.jpg");
+    width: 100%;
+    height: 10px;
+    background-repeat: repeat-x;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus{
+    outline: none;
+}
+header{
+    width: 90%;
+    margin: 26px auto 0;
+    border-bottom: 1px solid rgba(23,61,74,0.4);
+    position: relative;
+    z-index: 2;
+    padding-bottom: 12px;
+}
+section{
+    position: relative;
+}
+.top-navbar{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    top: -120px;
+}
+.fixed{
+    position: fixed;
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    margin-top: 0;
+    padding: 10px 10px 12px;
+    border: 0;
+    z-index: 5;
+}
+.fixed .navbar .menu-icon{
+    margin: 10px 17px 0 0;
+}
+.fixed-container{
+    width: 100%;
+}
+header .logo{
+    width: 100px;
+}
+.title-section{
+    font-size: 17px;
+    font-weight: bold;
+}
+.nav-work .btn-info{
+	background-color: #173d4a;
+    border-color: transparent;
+    border-radius: 0;
+    position: absolute;
+    width: 200px;
+    left: 36px;
+    right: 0;
+    margin: auto;
+    bottom: -44px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.nav-work nav.navbar{
+	background: transparent;
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+.nav-work .navbar .container-fluid{
+    padding: 0;
+}
+.nav-work .navbar ul.nav{
+	display: none;
+    clear: both;
+    background: #fff;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.15);
+    border-top: 3px solid #173d4a;
+    position: relative;
+    top: 15px;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 1px;  
+    width: 100%;
+    margin: auto;
+}
+.nav-work .navbar ul.nav>li{
+    padding: 10px 0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+.nav-work .navbar ul.nav>li>a{
+    color: #173d4a;
+}
+.nav-work .navbar .menu-icon span{
+	width: 24px;
+    height: 1.9px;
+    background-color: #173d4a;
+    margin: 6px 0;
+    display: block;
+}
+.nav-work .navbar .menu-icon{
+    float: right;
+    padding: 5px 7px;
+    border: 2px solid #173d4a;
+    border-radius: 22%;
+}
+.social-networks{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    bottom: -49px;
+    left: -105px;
+    right: 0;
+}
+.social-networks .icn{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    position: relative;
+}
+.social-networks .icn:before{
+    content: '';
+    position: absolute;
+    background: url('../images/social-networks.png');
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    left: 0;
+}
+.social-networks .icn-instagram:before{
+    background-position: 60px 0;
+}
+.social-networks .icn-twitter:before{
+    background-position: 30px 0;
+}
+.hero-slider .slick-dots{
+    bottom: 10px;
+}
+.hero-slider .my-slider{
+    margin-bottom: 0 !important;
+}
+.slick-dots li button:before{
+    font-size: 15px !important;
+}
+.modalMessage{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modalMessage-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+/* The Close Button */
+.closeMessage {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeMessage:hover,
+.closeMessage:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalMessage-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modalMessage-body {padding: 2px 16px;}
+
+.modalMessage-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+.beneficios{
+    background: #2B94A6;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    overflow: hidden;
+}
+.beneficios .intro-text{
+    padding: 20px 20px 0;
+    position: relative;
+}
+.beneficios .benefit-title{
+    position: absolute;
+    color: #173d4a;
+    width: 100%;
+    margin-top: 23%;
+    z-index: 2;
+}
+.beneficios .intro-text span{
+    display: block;
+    font-size: 20px;
+}
+.beneficios .intro-text:after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    border-top: 50px solid #2B94A6;
+    border-left: 360px solid transparent;
+    left: 0;
+    bottom: -49px;
+    z-index: 1;
+}
+.beneficios .img-scroll{
+    padding: 0;
+}
+.como-funciona .works-title,
+.servicios .services-title{
+    background: #173d4a;
+    color: #fff;
+    margin: 0;
+    font-size: 22px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 30px 0;
+}
+.como-funciona .works-grid{
+    text-align: center;
+    margin: 20px 0;
+}
+.como-funciona .works-grid .icon-work{
+    position: relative;
+    width: 45%;
+    display: inline-block;
+    margin: 30px 5px;
+}
+.como-funciona .works-grid .icon-work .img-icon{
+    display: block;
+    height: 70px;
+}
+.como-funciona .works-grid .icon-work .img-icon:before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background:url('../images/funciona/icons-sprite.png');
+    background-size: cover;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.como-funciona .works-grid .servicio .img-icon:before{
+    background-position: -70px 0;
+}
+.como-funciona .works-grid .pago .img-icon:before{
+    background-position: -140px 0;
+}
+.como-funciona .works-grid .maestro .img-icon:before{
+    background-position: -210px 0;
+}
+.como-funciona .works-grid .recibe .img-icon:before{
+    background-position: -280px 0;
+}
+.como-funciona .works-grid .calificacion .img-icon:before{
+    background-position: -350px 0;
+}
+.servicios{
+    background: #2B94A6;
+    color: #fff;
+    text-align: center;
+}
+.servicios .button-container{
+    background: #173d4a;
+    text-align: center;
+}
+.servicios .button-container .btn-info{
+    text-transform: uppercase;
+    border-radius: 0;
+    background: #2B94A6;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+.servicios .services-title{
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.servicios .services-grid .service-item{
+    width: 130px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+.servicios .services-grid .service-item .title-service{
+    position: absolute;
+    top: 40%;
+    background: rgba(255,255,255,0.8);
+    padding: 3px 4px 3px 8px;
+    color: #173d4a;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+}
+.servicios .services-grid .service-item .more{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+    font-size: 50px;
+    color: #173d4a;
+    font-weight: lighter;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    line-height: 132px;
+    opacity: 0;
+    cursor: pointer;
+}
+.servicios .services-grid .service-item .more:before{
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    border: 2px solid #173d4a;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.servicios .services-grid .service-item:hover .more{
+    opacity: 1;
+}
+.servicios .services-grid .service-item:hover .title-service{
+    opacity: 0;
+}
+.servicios .more-info{
+    background: #fff;
+    color: #2B94A6;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+}
+.servicios .more-info .icon-service{
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    margin: 30px 6px;
+}
+.servicios .more-info .icon-service .img-icon{
+    display: block;
+    height: 78px;
+    margin-bottom: 12px;
+}
+.servicios .more-info .icon-service .img-icon:before{
+    content: '';
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    background:url('../images/servicios/services-sprite.png');
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.servicios .more-info .civiles .img-icon:before{
+    background-position: 82px 0;
+}
+.servicios .more-info .locativas .img-icon:before{
+    background-position: 160px 0;
+}
+.contactanos{
+    text-align: center;
+}
+.contactanos .btn-info{
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    background: #2B94A6;
+    border-radius: 0;
+    border:none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+footer{
+    background: #6596C7;
+    color: #fff;
+    font-weight: lighter;
+}
+footer .about-us,
+footer .contact,
+footer .social{
+    width: 85%;
+    margin: 30px auto;
+}
+footer h4{
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+}
+footer h4 span{
+    position: relative;
+}
+footer h4 span:before{
+    content: '';
+    position: absolute;
+    right: -100px;
+    width: 80px;
+    border-bottom: 2px solid #fff;
+    margin-top: 11px;
+}
+footer p{
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: justify;
+
+}
+footer .title-contact{
+    text-transform: capitalize;
+    margin-right: 18px;
+    display: inline-block;
+    vertical-align: top;
+}
+footer .info-contact{
+    display: inline-block;
+}
+footer .social {
+    margin-bottom: 50px;
+}
+footer .social h4{
+    margin-bottom: 0;
+}
+footer .social a{
+    position: relative;
+    display: inline-block;
+    width: 27px;
+}
+footer .social a:before{
+    content: '';
+    position: absolute;
+    background: url(../images/social-footer-sprite.png);
+    width: 27px;
+    height: 27px;
+    background-position: -2px 0 ;
+}
+footer .social .footer-instagram:before{
+    background-position: 59px 0;
+}
+footer .social .footer-twitter:before{
+    background-position: 28px 0;
+}
+footer .dicosas{
+    background: #2B94A6;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.servicesmodal .modal-dialog .modal-header{
+    border:none;
+    padding-bottom: 0;
+}
+.servicesmodal .modal-dialog .modal-header .close,
+.contactmodal .modal-dialog .modal-header .close,
+.workmodal .modal-dialog .modal-header .close{
+    opacity: 1;
+    color: #173D4A;
+    text-shadow: none;
+    font-size: 30px;
+}
+.servicesmodal .modal-dialog .modal-content{
+    background: #C4D3E5;
+    text-align: center;
+    color: #173D4A;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    border: none;
+}
+.servicesmodal .service-detail{
+    padding: 0 15px;
+    font-size: 13px;
+}
+.servicesmodal .service-item{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+.servicesmodal .service-item .title-service{
+    position: absolute;
+    top: 40%;
+    background: rgba(255,255,255,0.8);
+    padding: 3px 4px 3px 8px;
+    color: #173d4a;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+.servicesmodal .service-options li:nth-child(odd){
+    color: #2B94A6;
+}
+.servicesmodal .service-detail p{
+    margin-top: 30px;
+    line-height: 1.3;
+}
+.servicesmodal .service-detail p .down-more{
+	display: block;
+    font-size: 20px;
+    border-bottom: 1px solid #173D4A;
+    margin-bottom: 30px;
+}
+.servicesmodal .modal-dialog .modal-content .modal-body{
+    padding: 0;
+}
+.servicesmodal .modal-dialog .modal-content .form-service{
+    background: #2B94A6;
+    margin-top: 35px;
+    padding: 30px 0 40px;
+}
+.servicesmodal .modal-dialog .modal-content .form-service fieldset{
+    width: 85%;
+    margin: auto;
+}
+.servicesmodal .modal-dialog .modal-content .form-service fieldset:nth-child(2){
+    margin-top: 25px;
+}
+.servicesmodal .modal-dialog .modal-content .form-service legend,
+.workmodal .modal-dialog .modal-content .form-horizontal legend{
+    text-align: left;
+    color: #fff;
+    font-size: 17px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.servicesmodal .modal-dialog .modal-content .form-service input,
+.servicesmodal .modal-dialog .modal-content .form-service select,
+.contactmodal .modal-dialog .modal-content .form-horizontal input,
+.workmodal .modal-dialog .modal-content .form-horizontal input{
+    width: 85%;
+    border: none;
+    padding: 6px;
+    margin: 0 0 10px;
+    font-size: 13px;
+}
+.servicesmodal .modal-dialog .modal-content .form-service select option{
+    font-size: 13px;
+}
+.servicesmodal .modal-dialog .modal-content .form-service .inputs-time{
+    width: 45%;
+    display: inline-block;
+}
+.servicesmodal .modal-dialog .modal-content .form-service .inputs-time input{
+    width: 70%;
+}
+.servicesmodal .modal-dialog .modal-content .form-service input[name="price"],
+.servicesmodal .modal-dialog .modal-content .form-service input[name="reserve"]{
+    width: 35%;
+    margin: 20px 0 20px 6px;
+}
+.servicesmodal .modal-dialog .modal-content .form-service .price-label{
+    text-transform: capitalize;
+}
+.servicesmodal .modal-dialog .modal-content .form-service input[name="price"]{
+    margin-bottom: 0;
+}
+.servicesmodal .modal-dialog .modal-content .form-service fieldset .btn-default,
+.contactmodal .modal-dialog .modal-content .form-horizontal .btn-default,
+.workmodal .modal-dialog .modal-content .form-horizontal .btn-default{
+    width: 86%;
+    border: none;
+    background: #173d4a;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    max-width: 230px;
+}
+.servicesmodal .modal-dialog .modal-content .form-service fieldset .btn-append{
+	font-size: 13px;
+    display: block;
+    margin: auto;
+    color: #fff;
+    width: 44%;
+}
+.contactmodal .modal-dialog,
+.workmodal .modal-dialog{
+    max-width: 600px;
+}
+.contactmodal .modal-dialog .modal-content,
+.workmodal .modal-dialog .modal-content{
+    background: #2B94A6;
+}
+.contactmodal .modal-dialog .modal-content .modal-header,
+.workmodal .modal-dialog .modal-content .modal-header{
+    color: #fff;
+    width: 90%;
+    margin: auto;
+}
+.contactmodal .modal-dialog .modal-content .modal-header h4,
+.workmodal .modal-dialog .modal-content .modal-header h4{
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+.contactmodal .modal-dialog .modal-content .form-horizontal,
+.workmodal .modal-dialog .modal-content .form-horizontal{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.contactmodal .modal-dialog .modal-content .form-horizontal input,
+.workmodal .modal-dialog .modal-content .form-horizontal input{
+    width: 100%;
+}
+.contactmodal .modal-dialog .modal-content .form-horizontal textarea,
+.workmodal .modal-dialog .modal-content .form-horizontal textarea{
+    width: 100%;
+    min-height: 200px;
+    margin-top: 20px;
+}
+.workmodal .modal-dialog .modal-content .form-horizontal textarea{
+    margin: 0 0 20px;
+}
+.workmodal .modal-dialog .modal-content .form-horizontal input[type="file"]{
+    margin-bottom: 50px;
+}
+.xdsoft_datetimepicker{
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    max-width: 360px;
+}
+.append-container{
+	padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    float: left;
+}
+.append-container .delete-day{
+	background: none;
+    border: none;
+    color: #fff;
+    float: right;
+}
+.servicesmodal .modal-dialog .modal-content .form-service .append-container:last-child{
+	margin-bottom: 15px;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    background: #173d4a;
+    border: none;
+    float: left;
+    margin-left: 0;
+    margin-bottom: 28px;
+    display: inline-block;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.value-file{
+	display: inline-block;
+	margin-top: 5%;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+    header{
+        width: 100%;
+    }
+    header .logo{
+        width: 115px;
+    }
+    .fixed .navbar .menu-icon{
+        margin: 9px;
+    }
+    .fixed .nav-work .btn-info{
+        top: 22px;
+    }
+    .fixed .nav-work .navbar ul.nav{
+        top: 22px;
+    }
+    .nav-work .navbar ul.nav{
+    	top: 26px;
+    }
+    .nav-work .btn-info{
+        top: 23px;
+        bottom: inherit;
+        z-index: 3;
+        right: 10%;
+        left: inherit;
+    }
+    .nav-work .navbar .menu-icon{
+    	margin-top: 11px;
+    }
+    .nav-work .navbar ul.nav>li{
+        float: none;
+        cursor: pointer;
+    }
+    .social-networks{
+        position: absolute;
+        top: 23px;
+        right: 37%;
+        text-align: center;
+        width: inherit;
+    }
+    .social-networks .icn{
+        display: block;
+    }
+    .social-networks .icns{
+        display: inline-block;
+        float: right;
+        margin-right: 10px;
+    }
+    .beneficios .container{
+        width: 100%;
+    }
+    .beneficios .intro-text{
+        padding: 35px 0;
+        font-size: 16px;
+    }
+    .beneficios .intro-text span{
+        font-size: 28px;
+    }
+    .beneficios .intro-text:after{
+        border-left: 1024px solid transparent;
+    }
+    .como-funciona .works-grid .icon-work .img-icon{
+        height: 110px;
+    }
+    .como-funciona .works-grid .icon-work .img-icon:before{
+        width: 110px;
+        height: 110px;
+    }
+    .como-funciona .works-grid .servicio .img-icon:before{
+        background-position: -110px 0;
+    }
+    .como-funciona .works-grid .pago .img-icon:before{
+        background-position: -220px 0;
+    }
+    .como-funciona .works-grid .maestro .img-icon:before{
+        background-position: -330px 0;
+    }
+    .como-funciona .works-grid .recibe .img-icon:before{
+        background-position: -440px 0;
+    }
+    .como-funciona .works-grid .calificacion .img-icon:before{
+        background-position: -550px 0;
+    }
+    .servicios .services-grid{
+        margin: 50px 0;
+    }
+    .servicios .services-grid .service-item{
+        width: 160px;
+        margin: 20px 60px;
+    }
+    .servicios .services-grid .service-item .more{
+        line-height: 157px;
+    }
+    .servicios .more-info .icon-service{
+        width: 25%;
+    }
+    .contactanos .btn-info{
+        margin-bottom: 40px;
+    }
+    footer .footer-content{
+        width: 80%;
+        margin: auto;
+    }
+    footer .footer-content .about-us{
+        width: 100%;
+    }
+    footer .footer-content .contact,
+    footer .footer-content .social{
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+    }
+    footer .footer-content .social{
+        float: right;
+    }
+    .modal-dialog{
+        width: 95%;
+        max-width: 1024px;
+    }
+    .servicesmodal .modal-dialog .modal-content{
+        float: left;
+        overflow: hidden;
+    }
+    .servicesmodal .modal-dialog .modal-header{
+        position: absolute;
+        right: 2%;
+        z-index: 2;
+    }
+    .servicesmodal .service-detail,
+    .servicesmodal .form-service{
+        width: 49.5%;
+        vertical-align: top;
+        display: inline-block;
+    }
+    .servicesmodal .service-detail{
+        float: left;
+        margin-top: 25px;
+    }
+    .servicesmodal .service-detail p .down-more{
+    	display: none;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service{
+        float: right;
+        margin-top: 0;
+        position: relative;
+        padding-bottom: 17%;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service:after{
+        content: '';
+        position: absolute;
+        top: 34px;
+        left: -27px;
+        border-right: 28px solid #2b94a6;
+        border-top: 28px solid transparent;
+        border-bottom: 28px solid transparent;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service fieldset .btn-default,
+    .contactmodal .modal-dialog .modal-content .form-horizontal .btn-default,
+    .workmodal .modal-dialog .modal-content .form-horizontal .btn-default{
+         float: right;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service fieldset .btn-default{
+        margin-right: 2%;
+    }
+    .xdsoft_datetimepicker{
+        left: 38% !important;
+        bottom: inherit !important;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service fieldset .btn-append{
+    	float: none;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service fieldset{
+    	width: 90%;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service .sandbox-container{
+    	width: 41%;
+    	display: inline-block;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service .sandbox-container input{
+    	width: 100%;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service .inputs-time{
+    	width: 25%;
+    }
+    .append-container .sandbox-container{
+    	margin-right: 6px;
+    }
+    .append-container span{
+    	margin: 0 4px;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service .label-group{
+    	text-align: right;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service .label-group input{
+    	margin-right: 2%;
+    }
+    .upload-cv{
+    	display: block;
+    	height: 50px;
+    }
+    .value-file{
+    	margin-top: 3%;
+    	float: left;
+    }
+    .workmodal .modal-dialog .modal-content .form-horizontal .btn-default{
+    	clear: left;
+    }
+}
+@media (min-width: 992px){
+    body:before{
+        background-image: url('../images/line-top.jpg');
+    }
+    header{
+        float: left;
+        padding: 5px;
+    }
+    header .logo{
+        display: inline-block;
+    }
+    header .nav-work{
+        display: inline-block;
+        float: right;
+    }
+    .fixed{
+        padding: 10px 40px;
+    }
+    .fixed .nav-work .btn-info{
+        top: 0;
+    }
+    .fixed .nav-work .navbar ul.nav{
+        top: inherit;
+    }
+    .nav-work .btn-info{
+        position: relative;
+        right: inherit;
+        float: right;
+        top: 0;
+    }
+    .nav-work nav.navbar{
+        position: relative;
+        top: inherit;
+        width: inherit;
+        right: inherit;
+        margin: 0;
+        min-height: inherit;
+    }
+    .nav-work .navbar .menu-icon{
+        display: none;
+    }
+    .nav-work .navbar ul.nav{
+        display: block !important;
+        box-shadow: none;
+        border: none;
+        top: inherit;
+        background: transparent;
+        margin-top: 10px;
+    }
+    .nav-work .navbar ul.nav>li{
+        box-shadow: none;
+        padding: 0;
+        float: left;
+    }
+    .nav-work .navbar ul.nav>li:last-child a{
+        padding-right: 0;
+    }
+    .nav-work .navbar ul.nav>li>a{
+        padding: 5px 20px;
+    }
+    .social-networks{
+        position: relative;
+        top: 0px;
+        right: 0%;
+        left: 0px;
+    }
+    .social-networks .icn{
+        width: 36px;
+        height: 36px;
+    }
+    .social-networks .icn:before{
+        width: 36px;
+        height: 36px;
+    }
+    .social-networks .icn-instagram:before{
+        background-position: 80px 0;
+    }
+    .social-networks .icn-twitter:before{
+        background-position: 40px 0;
+    }
+    .beneficios .intro-text:after{
+        border-left: 1280px solid transparent;
+    }
+    .beneficios .benefits-imgs{
+        background: #fff;
+        color: #173d4a;
+        float: left;
+        width: 100%;
+        height: 500px;
+        /*overflow-y: auto;*/
+    }
+    .benefits-imgs::-webkit-scrollbar { 
+        display: none; 
+    }
+    .beneficios .nav-benefits{
+        position: absolute;
+        margin-top: 120px;
+    }
+    .beneficios .img-scroll{
+        float: right;
+    }
+    .beneficios .nav-benefits .nav>li{
+        width: 40%;
+        display: inline-block;
+    }
+    .beneficios .nav-benefits .nav>li>a span{
+        height: 102px;
+        display: block;
+        width: 102px;
+        margin: auto;
+    }
+    .beneficios .nav-benefits .nav>li>a span:before{
+        content: '';
+        position: absolute;
+        background: url('../images/beneficios/beneficios-icns-sprite.png');
+        width: 102px;
+        height: 102px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .beneficios .nav-benefits .nav .calidad>a span:before{
+        background-position: -102px 0;
+    }
+    .beneficios .nav-benefits .nav .confianza>a span:before{
+        background-position: -204px 0;
+    }
+    .beneficios .nav-benefits .nav .garantia>a span:before{
+        background-position: -306px 0;
+    }
+    .beneficios .nav-benefits .nav>li.active>a span:before{
+        background: url('../images/beneficios/beneficios-icns-active-sprite.png');
+    }
+    .beneficios .nav-benefits .nav .calidad.active>a span:before{
+        background-position: -102px 0;
+    }
+    .beneficios .nav-benefits .nav .confianza.active>a span:before{
+        background-position: -204px 0;
+    }
+    .beneficios .nav-benefits .nav .garantia.active>a span:before{
+        background-position: -306px 0;
+    }
+    .beneficios .nav-benefits .nav>li>a:focus,
+    .beneficios .nav-benefits .nav>li>a:hover{
+        background: transparent;
+    }
+    .como-funciona .works-title,
+    .servicios .services-title{
+        font-size: 28px;
+    }
+    .como-funciona .works-grid .icon-work{
+        width: 30%;
+    }
+    .servicios .services-grid .service-item{
+        margin: 20px 15px;
+        z-index: 1;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service .inputs-time input{
+        width: 78%;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service input[name="price"],
+    .servicesmodal .modal-dialog .modal-content .form-service input[name="reserve"]{
+        width: 47%;
+    }
+    footer .footer-content{
+        width: 90%;
+        margin: 30px auto;
+        text-align: center;
+    }
+    footer .footer-content .about-us{
+        width: 32%;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+        float: left;
+        text-align: left;
+    }
+    footer .footer-content .contact,
+    footer .footer-content .social{
+        width: 32%;
+        text-align: left;
+    }
+    footer .footer-content .contact{
+        padding-left: 30px;
+    }
+}
+@media (min-width: 1200px){
+    .servicios .services-grid .service-item{
+         margin: 20px 18px;
+    }
+    .servicesmodal .modal-dialog .modal-content .form-service input[name="price"],
+    .servicesmodal .modal-dialog .modal-content .form-service input[name="reserve"]{
+        width: 52%;
+    }
+}
