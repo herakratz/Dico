@@ -225,8 +225,8 @@ function getSubService(serviceName, srcImage){
 		case 'Aseo':
             ServicesDesc = "<div style=\"text-align:justify;\">"
             ServicesDesc += "<h3 style=\"text-align:center;\">Servicio de Aseo</h3>"
-		        ServicesDesc += "<p>Dinos que dÃ­as y cuantas horas necesitas un Maestro Plomero DICO.</p>";
-            ServicesDesc += "Recuerda que Â todos Â nuestro equipo maestro estÃ¡ calificado y cuenta con experiencia y habilidades certificada Â por nuestro equipo administrativo.</br>";
+		        ServicesDesc += "<p>Dinos que días y cuantas horas necesitas un Maestro Plomero DICO.</p>";
+            ServicesDesc += "Recuerda que á todo  nuestro equipo maestro está calificado y cuenta con experiencia y habilidades certificada  por nuestro equipo administrativo.</br>";
             ServicesDesc += "<h4>SUBSERVICIOS</h4>";
             ServicesDesc += "<table><tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Por horas aseadora</th></tr></table>";
             ServicesDesc += "<ul style=\"list-style-type: square; margin-left: 40px;\" >";
@@ -235,7 +235,7 @@ function getSubService(serviceName, srcImage){
             ServicesDesc += "<li>Son 3 horas de servicio  asignadas que inician  a partir de la llegada de tu maestro DICO.</li>"
             ServicesDesc += "<li>El  tiempo  adicional  lo acuerdas directamente con tu maestro DICO.</li>"
             ServicesDesc += "</ul><br>";
-            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacciÃ³n.<br>";
+            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacción.<br>";
             ServicesDesc += "</div>";
 
 	    SubServices = "<option value=\";\">Selecciona tu servicio</option>"
@@ -248,14 +248,14 @@ function getSubService(serviceName, srcImage){
 		case "Plomeria":
             ServicesDesc = "<div style=\"text-align:justify;\">"
             ServicesDesc += "<h3 style=\"text-align:center;\">Servicio de Plomeria</h3>"
-            ServicesDesc += "<p>Dinos que dÃ­as y cuantas horas necesitas un Maestro del Aseo DICO.</p>";
-            ServicesDesc += "Recuerda que Â todos Â nuestro equipo maestro estÃ¡ calificado y cuenta con experiencia y habilidades certificada Â por nuestro equipo administrativo.</br>";
+            ServicesDesc += "<p>Dinos que días y cuantas horas necesitas un Maestro del Aseo DICO.</p>";
+            ServicesDesc += "Recuerda que á todo  nuestro equipo maestro está calificado y cuenta con experiencia y habilidades certificada  por nuestro equipo administrativo.</br>";
             ServicesDesc += "<h4>SUBSERVICIOS</h4>";
             ServicesDesc += "<table>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>ReparaciÃ³n e instalaciÃ³n de Lavaplatos/Lavadora /secadora</th></tr>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>ReparaciÃ³n e instalaciÃ³n de GriferÃ­a (duchas, cocina, lavamanos)</th></tr>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>ReparaciÃ³n e instalaciÃ³n de aparatos sanitarios (lavamanos, sanitarios, duchas)</th></tr>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>ReparaciÃ³n de fugas de tuberÃ­as</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Reparación e instalación de Lavaplatos/Lavadora /secadora</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Reparación e instalación de Grifería (duchas, cocina, lavamanos)</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Reparación e instalación de aparatos sanitarios (lavamanos, sanitarios, duchas)</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Reparación de fugas de tuberí­as</th></tr>";
             ServicesDesc += "</table>";
             ServicesDesc += "<ul style=\"list-style-type: square; margin-left: 40px;\" >";
             ServicesDesc += "<li>Reserva pagando <strong style=\"font-size: large;\">$10000</strong> y cancela el saldo directamente a tu maestro DICO</li>"
@@ -263,9 +263,9 @@ function getSubService(serviceName, srcImage){
             ServicesDesc += "<li>Son 2 horas de servicio  asignadas que inician  a partir de la llegada de tu maestro DICO.</li>"
             ServicesDesc += "<li>El  tiempo  adicional  lo acuerdas directamente con tu maestro DICO.</li>"
             ServicesDesc += "</ul><br>";
-            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacciÃ³n.<br>";
+            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacción.<br>";
             ServicesDesc += "</div>";
-	    
+
             SubServices = "<option value=\";\">Selecciona tu servicio</option>";
 	    SubServices += "<option value=\"1;\">Reparación e instalación de Lavaplatos/Lavadora /secadora</option>";
 	    SubServices += "<option value=\"2;\">Reparación e instalación de Grifería (duchas, cocina, lavamanos)</option>";
@@ -279,11 +279,11 @@ function getSubService(serviceName, srcImage){
 		case "Carpinteria":
             ServicesDesc = "<div style=\"text-align:justify;\">"
             ServicesDesc += "<h3 style=\"text-align:center;\">Servicio de Carpinteria</h3>"
-            ServicesDesc += "<p>Dinos que dÃ­as y cuantas horas necesitas un Maestro  Carpintero DICO.</p>";
-            ServicesDesc += "Recuerda que Â todos Â nuestro equipo maestro estÃ¡ calificado y cuenta con experiencia y habilidades certificada Â por nuestro equipo administrativo.</br>";
+            ServicesDesc += "<p>Dinos que días y cuantas horas necesitas un Maestro  Carpintero DICO.</p>";
+            ServicesDesc += "Recuerda que á todo  nuestro equipo maestro está calificado y cuenta con experiencia y habilidades certificada  por nuestro equipo administrativo.</br>";
             ServicesDesc += "<h4>SUBSERVICIOS</h4>";
             ServicesDesc += "<table>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>ReparaciÃ³n e instalaciÃ³n de muebles (puertas)</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Reparación e instalación de muebles (puertas)</th></tr>";
             ServicesDesc += "</table>";
             ServicesDesc += "<ul style=\"list-style-type: square; margin-left: 40px;\" >";
             ServicesDesc += "<li>Reserva pagando <strong style=\"font-size: large;\">$10000</strong> y cancela el saldo directamente a tu maestro DICO</li>"
@@ -291,7 +291,7 @@ function getSubService(serviceName, srcImage){
             ServicesDesc += "<li>Son 2 horas de servicio  asignadas que inician  a partir de la llegada de tu maestro DICO.</li>"
             ServicesDesc += "<li>El  tiempo  adicional  lo acuerdas directamente con tu maestro DICO.</li>"
             ServicesDesc += "</ul><br>";
-            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacciÃ³n.<br>";
+            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacción.<br>";
             ServicesDesc += "</div>";
 
             SubServices = "<option value=\";\">Selecciona tu servicio</option>";
@@ -304,8 +304,8 @@ function getSubService(serviceName, srcImage){
 		case "Cerrajeria":
             ServicesDesc = "<div style=\"text-align:justify;\">"
             ServicesDesc += "<h3 style=\"text-align:center;\">Servicio de Cerrajeria</h3>"
-            ServicesDesc += "<p>Dinos que dÃ­as y cuantas horas necesitas un Maestro Cerrajero DICO.</p>";
-            ServicesDesc += "Recuerda que Â todos Â nuestro equipo maestro estÃ¡ calificado y cuenta con experiencia y habilidades certificada Â por nuestro equipo administrativo.</br>";
+            ServicesDesc += "<p>Dinos que días y cuantas horas necesitas un Maestro Cerrajero DICO.</p>";
+            ServicesDesc += "Recuerda que á todo  nuestro equipo maestro está calificado y cuenta con experiencia y habilidades certificada  por nuestro equipo administrativo.</br>";
             ServicesDesc += "<h4>SUBSERVICIOS</h4>";
             ServicesDesc += "<table>";
             ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Cambio de Guardas, cerrojo, chapas.</th></tr>";
@@ -316,7 +316,7 @@ function getSubService(serviceName, srcImage){
             ServicesDesc += "<li>Son 2 horas de servicio  asignadas que inician  a partir de la llegada de tu maestro DICO.</li>"
             ServicesDesc += "<li>El  tiempo  adicional  lo acuerdas directamente con tu maestro DICO.</li>"
             ServicesDesc += "</ul><br>";
-            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacciÃ³n.<br>";
+            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacción.<br>";
             ServicesDesc += "</div>";
 
 	    SubServices = "<option value=\";\">Selecciona tu servicio</option>";
@@ -329,14 +329,14 @@ function getSubService(serviceName, srcImage){
 		case "Electricista":
             ServicesDesc = "<div style=\"text-align:justify;\">"
             ServicesDesc += "<h3 style=\"text-align:center;\">Servicio de Electricista</h3>"
-            ServicesDesc += "<p>Dinos que dÃ­as y cuantas horas necesitas un Maestro Electricista DICO.</p>";
-            ServicesDesc += "Recuerda que Â todos Â nuestro equipo maestro estÃ¡ calificado y cuenta con experiencia y habilidades certificada Â por nuestro equipo administrativo.</br>";
+            ServicesDesc += "<p>Dinos que días y cuantas horas necesitas un Maestro Electricista DICO.</p>";
+            ServicesDesc += "Recuerda que á todo  nuestro equipo maestro está calificado y cuenta con experiencia y habilidades certificada  por nuestro equipo administrativo.</br>";
             ServicesDesc += "<h4>SUBSERVICIOS</h4>";
             ServicesDesc += "<table>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>ReparaciÃ³n e instalaciÃ³n de calentadores elÃ©ctricos</th></tr>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>RevisiÃ³n y arreglo de aparatos elÃ©ctricos, tomacorrientes, interruptores, timbres</th></tr>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>ReparaciÃ³n e instalaciÃ³n estufas elÃ©ctricas</th></tr>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>InstalaciÃ³n de lÃ¡mparas (elementos  iluminaciÃ³n)</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Reparación e instalación de calentadores eléctricos</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Revisión y arreglo de aparatos eléctricos, tomacorrientes, interruptores, timbres</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Reparación e instalación estufas eléctricas</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Instalación de lámparas (elementos  iluminación)</th></tr>";
             ServicesDesc += "</table>";
             ServicesDesc += "<ul style=\"list-style-type: square; margin-left: 40px;\" >";
             ServicesDesc += "<li>Reserva pagando <strong style=\"font-size: large;\">$10000</strong> y cancela el saldo directamente a tu maestro DICO</li>"
@@ -344,7 +344,7 @@ function getSubService(serviceName, srcImage){
             ServicesDesc += "<li>Son 2 horas de servicio  asignadas que inician  a partir de la llegada de tu maestro DICO.</li>"
             ServicesDesc += "<li>El  tiempo  adicional  lo acuerdas directamente con tu maestro DICO.</li>"
             ServicesDesc += "</ul><br>";
-            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacciÃ³n.<br>";
+            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacción.<br>";
             ServicesDesc += "</div>";
 
 	    SubServices = "<option value=\";\">Selecciona tu servicio</option>";
@@ -360,13 +360,13 @@ function getSubService(serviceName, srcImage){
 		case "Gas":
             ServicesDesc = "<div style=\"text-align:justify;\">"
             ServicesDesc += "<h3 style=\"text-align:center;\">Servicio de Gas</h3>"
-            ServicesDesc += "<p>Dinos que dÃ­as y cuantas horas necesitas un Maestro Gasodomestico DICO.</p>";
-            ServicesDesc += "Recuerda que Â todos Â nuestro equipo maestro estÃ¡ calificado y cuenta con experiencia y habilidades certificada Â por nuestro equipo administrativo.</br>";
+            ServicesDesc += "<p>Dinos que días y cuantas horas necesitas un Maestro Gasodomestico DICO.</p>";
+            ServicesDesc += "Recuerda que á todo  nuestro equipo maestro está calificado y cuenta con experiencia y habilidades certificada  por nuestro equipo administrativo.</br>";
             ServicesDesc += "<h4>SUBSERVICIOS</h4>";
             ServicesDesc += "<table>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Arreglo e instalaciÃ³n de calentadores</th></tr>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Arreglo e instalaciÃ³n de estufas</th></tr>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>ReparaciÃ³n e instalaciones de  tuberÃ­as  gas</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Arreglo e instalación de calentadores</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Arreglo e instalación de estufas</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Reparación e instalaciones de  tuberí­as  gas</th></tr>";
             ServicesDesc += "</table>";
             ServicesDesc += "<ul style=\"list-style-type: square; margin-left: 40px;\" >";
             ServicesDesc += "<li>Reserva pagando <strong style=\"font-size: large;\">$10000</strong> y cancela el saldo directamente a tu maestro DICO</li>"
@@ -374,7 +374,7 @@ function getSubService(serviceName, srcImage){
             ServicesDesc += "<li>Son 2 horas de servicio  asignadas que inician  a partir de la llegada de tu maestro DICO.</li>"
             ServicesDesc += "<li>El  tiempo  adicional  lo acuerdas directamente con tu maestro DICO.</li>"
             ServicesDesc += "</ul><br>";
-            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacciÃ³n.<br>";
+            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacción.<br>";
             ServicesDesc += "</div>";
 
 	    SubServices = "<option value=\";\">Selecciona tu servicio</option>";
@@ -389,8 +389,8 @@ function getSubService(serviceName, srcImage){
     case "Mudanza":
             ServicesDesc = "<div style=\"text-align:justify;\">"
             ServicesDesc += "<h3 style=\"text-align:center;\">Servicio de Mudanza</h3>"
-            ServicesDesc += "<p>Dinos que dÃ­as y cuantas horas necesitas un Maestro de la Mudanza DICO.</p>";
-            ServicesDesc += "Recuerda que Â todos Â nuestro equipo maestro estÃ¡ calificado y cuenta con experiencia y habilidades certificada Â por nuestro equipo administrativo.</br>";
+            ServicesDesc += "<p>Dinos que días y cuantas horas necesitas un Maestro de la Mudanza DICO.</p>";
+            ServicesDesc += "Recuerda que á todo  nuestro equipo maestro está calificado y cuenta con experiencia y habilidades certificada  por nuestro equipo administrativo.</br>";
             ServicesDesc += "<h4>SUBSERVICIOS</h4>";
             ServicesDesc += "<table>";
             ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Mudanzas</th></tr>";
@@ -401,7 +401,7 @@ function getSubService(serviceName, srcImage){
             ServicesDesc += "<li>Son 2 horas de servicio  asignadas que inician  a partir de la llegada de tu maestro DICO.</li>"
             ServicesDesc += "<li>El  tiempo  adicional  lo acuerdas directamente con tu maestro DICO.</li>"
             ServicesDesc += "</ul><br>";
-            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacciÃ³n.<br>";
+            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacción.<br>";
             ServicesDesc += "</div>";
 
 	    SubServices = "<option value=\";\">Selecciona tu servicio</option>";
@@ -414,8 +414,8 @@ function getSubService(serviceName, srcImage){
 		case "Pintor":
             ServicesDesc = "<div style=\"text-align:justify;\">"
             ServicesDesc += "<h3 style=\"text-align:center;\">Servicio de Pintor</h3>"
-            ServicesDesc += "<p>Dinos que dÃ­as y cuantas horas necesitas un Maestro Pintor DICO.</p>";
-            ServicesDesc += "Recuerda que Â todos Â nuestro equipo maestro estÃ¡ calificado y cuenta con experiencia y habilidades certificada Â por nuestro equipo administrativo.</br>";
+            ServicesDesc += "<p>Dinos que días y cuantas horas necesitas un Maestro Pintor DICO.</p>";
+            ServicesDesc += "Recuerda que á todo  nuestro equipo maestro está calificado y cuenta con experiencia y habilidades certificada  por nuestro equipo administrativo.</br>";
             ServicesDesc += "<h4>SUBSERVICIOS</h4>";
             ServicesDesc += "<table>";
             ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Pintura</th></tr>";
@@ -426,7 +426,7 @@ function getSubService(serviceName, srcImage){
             ServicesDesc += "<li>Son 2 horas de servicio  asignadas que inician  a partir de la llegada de tu maestro DICO.</li>"
             ServicesDesc += "<li>El  tiempo  adicional  lo acuerdas directamente con tu maestro DICO.</li>"
             ServicesDesc += "</ul><br>";
-            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacciÃ³n.<br>";
+            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacción.<br>";
             ServicesDesc += "</div>";
 
 	    SubServices = "<option value=\";\">Selecciona tu servicio</option>";
@@ -439,11 +439,11 @@ function getSubService(serviceName, srcImage){
 		case "Jardineria":
             ServicesDesc = "<div style=\"text-align:justify;\">"
             ServicesDesc += "<h3 style=\"text-align:center;\">Servicio de Jardineria</h3>"
-            ServicesDesc += "<p>Dinos que dÃ­as y cuantas horas necesitas un Maestro Jardinero DICO.</p>";
-            ServicesDesc += "Recuerda que Â todos Â nuestro equipo maestro estÃ¡ calificado y cuenta con experiencia y habilidades certificada Â por nuestro equipo administrativo.</br>";
+            ServicesDesc += "<p>Dinos que días y cuantas horas necesitas un Maestro Jardinero DICO.</p>";
+            ServicesDesc += "Recuerda que á todo  nuestro equipo maestro está calificado y cuenta con experiencia y habilidades certificada  por nuestro equipo administrativo.</br>";
             ServicesDesc += "<h4>SUBSERVICIOS</h4>";
             ServicesDesc += "<table>";
-            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Servicios generales de jardinerÃ­a</th></tr>";
+            ServicesDesc += "<tr style=\"border: 1px solid black; margin-left: 20px;\"><th>Servicios generales de jardinerí­a</th></tr>";
             ServicesDesc += "</table>";
             ServicesDesc += "<ul style=\"list-style-type: square; margin-left: 40px;\" >";
             ServicesDesc += "<li>Reserva pagando <strong style=\"font-size: large;\">$10000</strong> y cancela el saldo directamente a tu maestro DICO</li>"
@@ -451,7 +451,7 @@ function getSubService(serviceName, srcImage){
             ServicesDesc += "<li>Son 2 horas de servicio  asignadas que inician  a partir de la llegada de tu maestro DICO.</li>"
             ServicesDesc += "<li>El  tiempo  adicional  lo acuerdas directamente con tu maestro DICO.</li>"
             ServicesDesc += "</ul><br>";
-            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacciÃ³n.<br>";
+            ServicesDesc += "Si el maestro DICO no cumple tus expectativas, te enviaremos  otro  hasta  completar el trabajo a satisfacción.<br>";
             ServicesDesc += "</div>";
 
 	    SubServices = "<option value=\";\">Selecciona tu servicio</option>";
