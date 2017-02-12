@@ -420,3 +420,8 @@ function sendTrabajaCon(){
   $("#titleAlertModal").html("Mensaje Enviado");
   $("#textAlertModal").html("Tu mensaje ha sido enviado, gracias por querer trabajar con DICO.<br> protno recibiras noticias.");
 }
+
+function sendServicio(){
+  $("#titleAlertModal").html("Mensaje Enviado");
+  $("#textAlertModal").html("Tu mensaje ha sido enviado, gracias por querer trabajar con DICO.<br> protno recibiras noticias.");
+}

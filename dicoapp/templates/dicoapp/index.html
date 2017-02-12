@@ -345,6 +345,31 @@
   </div>
 </div>
 
+
+<div class="modal fade alertmodal" id="paymodal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 id="titleAlertModal" class="modal-title">Reserva de Servicio</h4>
+      </div>
+      <div class="modal-body">
+        <p id="textAlertModal" class="text-modal">Estamos comprometidos contigo y tus necesidades. De esta manera obtienes nuestros servicios al instante en el lugar que prefieras y sin esfuerzos, para eso requerimos los datos de tu tarjeta de crédito, así los pagos podrán ser online o con datafono el día de tu cita si lo deseas. Tus datos siempre estarán protegidos. DICO no tiene acceso a tus números de tarjetas ni contraseñas.
+        </p>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+  				<iframe id="paymentezadd" class="embed-responsive-item" src="https://ccapi.paymentez.com/api/cc/add/?application_code=MOOI&amp;uid=29488977061209659385052941929850&amp;email=juabal4%40gmail.com&amp;session_id=82345271689778837851921753974991&amp;auth_timestamp=1486894472&amp;auth_token=68597503c2c83e5bfa406d0afd6ebebbfef194031ddbc207203e71c7e6e27fd2" onload="load(this)" marginwidth="0" marginheight="0" border="0" style="background:#E7E6E6;height: 300px;" height="100%" width="100%"></iframe>
+  			</div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <div class="modal fade servicesmodal" id="serviceModal" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
@@ -402,7 +427,7 @@
                 <label class="price-label">valor//reserva $</label>
                 <input type="number" name="reserve" value="10.000">
               </div>
-              <button type="button" class="btn btn-default btn-info">reserva ahora</button>
+              <button type="button" class="btn btn-default btn-info" data-dismiss="modal" data-toggle="modal" data-target="#paymodal">reserva ahora</button>
             </fieldset>
           </form>
         </div>
