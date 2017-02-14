@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'bootstrapform',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'dicosas.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'DicoBD',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
 
@@ -127,4 +131,10 @@ STATIC_URL = '/static/'
 
 LOGIN_URL = '/admin/login'
 
+#Configuraciones para el email
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'correodicosas@gmail.com'
+EMAIL_HOST_PASSWORD = 'dicosas123'
+EMAIL_PORT = 587
 
