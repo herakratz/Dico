@@ -39,8 +39,8 @@
     border-radius: 50%;
 	border:10px solid #cfdcec;
     overflow:hidden;
-    
-    background-image: url("../images/servicios/aseo.png"); 
+
+    background-image: url("../images/servicios/aseo.png");
     box-shadow: 0 0 3px gray;
 }
 .round-button-circle:hover {
@@ -54,7 +54,7 @@
     padding-bottom:50%;
 	line-height:1em;
 	margin-top:-0.5em;
-    
+
 	text-align:center;
 	color:#e2eaf3;
     font-family:Verdana;
@@ -175,7 +175,7 @@ header .logo{
     top: 15px;
     text-transform: capitalize;
     font-size: 16px;
-    letter-spacing: 1px;  
+    letter-spacing: 1px;
     width: 100%;
     margin: auto;
 }
@@ -266,7 +266,7 @@ header .logo{
 }
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
+    from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 /* The Close Button */
@@ -593,6 +593,7 @@ footer .dicosas{
     border:none;
     padding-bottom: 0;
 }
+.alertmodal .modal-dialog .modal-header .close,
 .servicesmodal .modal-dialog .modal-header .close,
 .contactmodal .modal-dialog .modal-header .close,
 .workmodal .modal-dialog .modal-header .close{
@@ -715,26 +716,40 @@ footer .dicosas{
     color: #fff;
     width: 44%;
 }
+
+.alertmodal .modal-dialog,
 .contactmodal .modal-dialog,
 .workmodal .modal-dialog{
     max-width: 600px;
 }
+.alertmodal .modal-dialog .modal-content,
 .contactmodal .modal-dialog .modal-content,
 .workmodal .modal-dialog .modal-content{
     background: #2B94A6;
 }
+.alertmodal .modal-dialog .modal-content .modal-header,
 .contactmodal .modal-dialog .modal-content .modal-header,
 .workmodal .modal-dialog .modal-content .modal-header{
     color: #fff;
     width: 90%;
     margin: auto;
 }
+.alertmodal .modal-dialog .modal-content .modal-header h4,
 .contactmodal .modal-dialog .modal-content .modal-header h4,
 .workmodal .modal-dialog .modal-content .modal-header h4{
     font-size: 22px;
     letter-spacing: 1px;
     font-weight: lighter;
 }
+
+.alertmodal .modal-dialog .modal-content .text-modal{
+    width: 85%;
+    color: white;
+    margin: auto;
+    padding: 20px 0;
+    text-align: justify;
+}
+
 .contactmodal .modal-dialog .modal-content .form-horizontal,
 .workmodal .modal-dialog .modal-content .form-horizontal{
     width: 85%;
@@ -1001,7 +1016,7 @@ footer .dicosas{
     	margin: 0 4px;
     }
     .servicesmodal .modal-dialog .modal-content .form-service .label-group{
-    	text-align: right;
+    	text-align: center;
     }
     .servicesmodal .modal-dialog .modal-content .form-service .label-group input{
     	margin-right: 2%;
@@ -1109,8 +1124,8 @@ footer .dicosas{
         height: 500px;
         /*overflow-y: auto;*/
     }
-    .benefits-imgs::-webkit-scrollbar { 
-        display: none; 
+    .benefits-imgs::-webkit-scrollbar {
+        display: none;
     }
     .beneficios .nav-benefits{
         position: absolute;
