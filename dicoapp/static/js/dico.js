@@ -58,11 +58,11 @@ $(document).ready(function(){
         'minTime': '8:00am',
         'maxTime': '6:00pm'
     });
-
+/*
     $('.hora-final').timepicker({
         'minTime': '8:00am',
         'maxTime': '6:00pm'
-    });
+    });*/
 
     $('.btn-append').click(function(){
 
@@ -90,11 +90,11 @@ $(document).ready(function(){
           'minTime': '8:00am',
           'maxTime': '6:00pm'
         });
-
+/*
         $('.hora-final').timepicker({
           'minTime': '8:00am',
           'maxTime': '6:00pm'
-        });
+        });*/
 
         $('.delete-day').click(function(){
           $(this).parents('.day-select').remove();
@@ -473,17 +473,53 @@ function getSubService(serviceName, srcImage){
 
 }
 
-function sendContactenos(){
-  $("#titleAlertModal").html("Mensaje Enviado");
-  $("#textAlertModal").html("Tu mensaje ha sido enviado, nos estaremos comunicando lo antes posible.");
+function validateWorkwithUsForm(){
+  if($('#nameWorker').val()=='' || $('#phoneWorker').val()=='' || $('#descWorker').val()=='' ){
+    $("#titleAlertModal").html("Mensaje No Enviado");
+    $("#textAlertModal").html("Tu mensaje no ha sido enviado, Por favor diligencia el formulario correctamente.");
+  }
+  else {
+    clearWorkWithUsForm();
+    $("#titleAlertModal").html("Mensaje Enviado");
+    $("#textAlertModal").html("Tu mensaje ha sido enviado, nos estaremos comunicando lo antes posible.");
+  }
+
+}
+function clearWorkWithUsForm(){
+  $('#nameWorker').val("");
+  $('#phoneWorker').val("");
+  $('#descWorker').val("");
 }
 
-function sendTrabajaCon(){
-  $("#titleAlertModal").html("Mensaje Enviado");
-  $("#textAlertModal").html("Tu mensaje ha sido enviado, gracias por querer trabajar con DICO.<br> protno recibiras noticias.");
+function validateContactForm(){
+  if($('#nameWorker').val()=='' || $('#phoneWorker').val()=='' || $('#descWorker').val()=='' ){
+    $("#titleAlertModal").html("Mensaje No Enviado");
+    $("#textAlertModal").html("Tu mensaje no ha sido enviado, Por favor diligencia el formulario correctamente.");
+  }
+  else {
+    $("#titleAlertModal").html("Mensaje Enviado");
+    $("#textAlertModal").html("Tu mensaje ha sido enviado, nos estaremos comunicando lo antes posible.");
+  }
 }
 
-function sendServicio(){
-  $("#titleAlertModal").html("Mensaje Enviado");
-  $("#textAlertModal").html("Tu mensaje ha sido enviado, gracias por querer trabajar con DICO.<br> protno recibiras noticias.");
+function validateServiceForm(){
+
+  if($('#nameClient').val()=='' || $('#phoneClient').val().length < 7 || $('#addresClient').val()=='' || $('#emailClient').val()=='' || $('#serviceSubservices').val()== 0 || $('#selectDay').val()=='' ){
+
+    $('#btn-reservar').attr('data-target', '#alertmodal');
+    $("#titleAlertModal").html("Error en la reserva");
+    $("#textAlertModal").html("Por favor diligencia el formulario correctamente.");
+  }
+  else {
+    clearServiceForm();
+    $('#btn-reservar').attr('data-target', '#paymodal');
+  }
+}
+function clearServiceForm(){
+  $('#nameClient').val("");
+  $('#phoneClient').val("");
+  $('#addresClient').val("");
+  $('#emailClient').val("");
+  $('#serviceSubservices').val(0);
+  $('#selectDay').val("");
 }
