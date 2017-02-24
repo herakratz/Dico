@@ -157,42 +157,42 @@
                     <a href="" data-toggle="modal" data-target="#serviceModal" onclick="getSubService('Aseo','{% static 'images/servicios/aseo.jpg'%}');">
                           <span class="title-service">Aseo</span>
                           <img src="{% static 'images/servicios/aseo.jpg'%}">
-                          <div class="more">Aseo</div>
+                          <div class="more">+</div>
                     </a>
                 </div>
 		<div class="service-item">
                     <a href="" data-toggle="modal" data-target="#serviceModal" onclick="getSubService('Plomeria','{% static 'images/servicios/plomero.jpg'%}');">
                           <span class="title-service">Plomeria</span>
                           <img src="{% static 'images/servicios/plomero.jpg'%}">
-                          <div class="more">Plomeria</div>
+                          <div class="more">+</div>
                     </a>
                 </div>
 		<div class="service-item">
                     <a href="" data-toggle="modal" data-target="#serviceModal" onclick="getSubService('Carpinteria','{% static 'images/servicios/carpintero.jpg'%}');">
                           <span class="title-service">Carpinteria</span>
                           <img src="{% static 'images/servicios/carpintero.jpg'%}">
-                          <div class="more">Carpinteria</div>
+                          <div class="more">+</div>
                     </a>
                 </div>
 		<div class="service-item">
                     <a href="" data-toggle="modal" data-target="#serviceModal" onclick="getSubService('Cerrajeria','{% static 'images/servicios/cerrajero.jpg'%}');">
                           <span class="title-service">Cerrajeria</span>
                           <img src="{% static 'images/servicios/cerrajero.jpg'%}">
-                          <div class="more">Cerrajeria</div>
+                          <div class="more">+</div>
                     </a>
                 </div>
 		<div class="service-item">
                     <a href="" data-toggle="modal" data-target="#serviceModal" onclick="getSubService('Electricista', '{% static 'images/servicios/electrico.jpg'%}');">
                           <span class="title-service">Electricista</span>
                           <img src="{% static 'images/servicios/electrico.jpg'%}">
-                          <div class="more">Electricista</div>
+                          <div class="more">+</div>
                     </a>
                 </div>
 		<div class="service-item">
                     <a href="" data-toggle="modal" data-target="#serviceModal" onclick="getSubService('Gas', '{% static 'images/servicios/electrico.jpg'%}');">
                           <span class="title-service">Gas</span>
                           <img src="{% static 'images/servicios/gas.jpg'%}">
-                          <div class="more">Gas</div>
+                          <div class="more">+</div>
                     </a>
                 </div>
 
@@ -200,7 +200,7 @@
                     <a href="" data-toggle="modal" data-target="#serviceModal" onclick="getSubService('Mudanza','{% static 'images/servicios/mudanza.jpg'%}');">
                           <span class="title-service">Mudanza</span>
                           <img src="{% static 'images/servicios/mudanza.jpg'%}">
-                          <div class="more">Mudanza</div>
+                          <div class="more">+</div>
                     </a>
                 </div>
 
@@ -208,7 +208,7 @@
                     <a href="" data-toggle="modal" data-target="#serviceModal" onclick="getSubService('Pintor','{% static 'images/servicios/pintor.jpg'%}');">
                           <span class="title-service">Pintor</span>
                           <img src="{% static 'images/servicios/pintor.jpg'%}">
-                          <div class="more">Pintor</div>
+                          <div class="more">+</div>
                     </a>
                 </div>
 
@@ -216,7 +216,7 @@
                     <a href="" data-toggle="modal" data-target="#serviceModal" onclick="getSubService('Jardineria', '{% static 'images/servicios/jardinero.jpg'%}')">
                           <span class="title-service">Jardineria</span>
                           <img src="{% static 'images/servicios/jardinero.jpg'%}">
-                          <div class="more">Jardineria</div>
+                          <div class="more">+</div>
                     </a>
                 </div>
         </div>
@@ -256,7 +256,7 @@
           </div>
           <div class="contact">
             <h4><span>contacto</span></h4>
-            <p><span class="title-contact">telófono:</span><span class="info-contact">+57 3175382761<br>+57 3208389441</span></p>
+            <p><span class="title-contact">teléfono:</span><span class="info-contact">+57 3175382761<br>+57 3208389441</span></p>
             <p><span class="title-contact">email:</span><span class="info-contact">dicosas@gmail.com</span></p>
           </div>
           <div class="social">
@@ -283,9 +283,9 @@
         <form class="form-horizontal">
             <fieldset>
               <legend>Tu experiencia</legend>
-              <input type="text" name="name" pattern="[a-z]{3,15}" minlength="3" placeholder="Nombre completo" required>
-              <input type="number" name="phone" minlength="7" pattern="[0-9]{7,15}" placeholder="Celular" required>
-              <textarea name="desc" placeholder="Habilidades" pattern="[a-z]{1,15}" required></textarea>
+              <input type="text" id="nameWorker" name="name" pattern="[a-z]{3,15}" minlength="3" placeholder="Nombre completo" required>
+              <input type="number" id="phoneWorker" name="phone" minlength="7" pattern="[0-9]{7,15}" placeholder="Celular" required>
+              <textarea id="descWorker" name="desc" placeholder="Habilidades" pattern="[a-z]{1,15}" required></textarea>
               <legend>Hoja de vida</legend>
               <div class="upload-cv">
                 <div class="fileUpload btn btn-primary">
@@ -294,7 +294,7 @@
                 </div>
                 <div class="value-file"></div>
               </div>
-              <button type="button" class="btn btn-default btn-info" data-dismiss="modal" data-toggle="modal" data-target="#alertmodal" onclick="sendTrabajaCon();">enviar</button>
+              <button id="submit" type="button" class="btn btn-default btn-info" data-dismiss="modal" data-toggle="modal" data-target="#alertmodal" onclick="validateWorkwithUsForm();">enviar</button>
             </fieldset>
         </form>
       </div>
@@ -305,7 +305,7 @@
 <!-- Modal Contactenos-->
 <div class="modal fade contactmodal" id="contactModal" role="dialog"> </div>
 
-
+<!-- Modal Alert -->
 <div class="modal fade alertmodal" id="alertmodal" role="dialog">
   <div class="modal-dialog">
 
@@ -348,6 +348,7 @@
   </div>
 </div>
 
+<!-- Modal Servicios -->
 <div class="modal fade servicesmodal" id="serviceModal" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
@@ -372,10 +373,10 @@
           <form>
             <fieldset>
               <legend>Datos personales</legend>
-              <input type="text" name="name" placeholder="Nombre completo" required minlength="3" pattern="[A-Za-z]{1,32}">
-              <input type="number" name="celular" placeholder="Celular" minlenght="7" required>
-              <input type="text" name="direccion" placeholder="Dirección" required>
-              <input type="email" name="email" placeholder="Email" required>
+              <input id="nameClient" type="text" name="name" placeholder="Nombre completo" required minlength="3" pattern="[A-Za-z]{1,32}">
+              <input id="phoneClient" type="number" name="celular" placeholder="Celular" minlenght="7" required>
+              <input id="addressClient" type="text" name="direccion" placeholder="Dirección" required>
+              <input id="emailClient" type="email" name="email" placeholder="Email" required>
               <select id="serviceSubservices"></select>
             </fieldset>
             <fieldset>
@@ -383,14 +384,13 @@
               <div class="services-days">
                 <div class="day-select">
                   <div class="sandbox-container">
-                    <input type="text" placeholder="Selecciona la fecha">
+                    <input id="selectDay" type="text" placeholder="Selecciona la fecha">
                   </div>
                   <div class="inputs-time">
-                    <input type="text" class="time hora-inicio" placeholder="hora"/>
+                    <input id="selectHour" type="text" class="time hora-inicio" placeholder="hora"/>
                   </div>
-                  <span>a</span>
                   <div class="inputs-time">
-                    <input type="text" class="time hora-final" placeholder="hora"/>
+                    <input type="text" class="time hora-final" placeholder="Total Servicios"/>
                   </div><br>
                 </div>
               </div>
@@ -402,7 +402,7 @@
                 <label class="price-label">valor//reserva $</label>
                 <input type="number" id="PriceReserva" name="reserve" min="10000" max="40000" step="50" value="">
               </div>
-              <button type="button" class="btn btn-default btn-info" data-dismiss="modal" data-toggle="modal" data-target="#paymodal">reserva ahora</button>
+              <button id="btn-reservar" type="button" class="btn btn-default btn-info" data-dismiss="modal" data-toggle="modal" data-target="#paymodal" onclick="validateServiceForm();">reserva ahora</button>
             </fieldset>
           </form>
         </div>
