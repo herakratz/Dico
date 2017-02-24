@@ -29,7 +29,7 @@
             <img src="{% static 'images/logo-dico.png'%}">
           </div>
           <div class="nav-work">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#workModal">trabaja con nosotros</button>
+            <button id="btn-work" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#workModal">trabaja con nosotros</button>
             <div class="social-networks">
               <div class="icns">
                 <a href="https://www.facebook.com/dico.sas" target="_blank" class="icn icn-facebook"></a>
@@ -270,37 +270,7 @@
   </footer>
 
 
-<div class="modal fade workmodal" id="workModal" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Trabaja con nosotros</h4>
-      </div>
-      <div class="modal-body">
-        <form class="form-horizontal">
-            <fieldset>
-              <legend>Tu experiencia</legend>
-              <input type="text" id="nameWorker" name="name" pattern="[a-z]{3,15}" minlength="3" placeholder="Nombre completo" required>
-              <input type="number" id="phoneWorker" name="phone" minlength="7" pattern="[0-9]{7,15}" placeholder="Celular" required>
-              <textarea id="descWorker" name="desc" placeholder="Habilidades" pattern="[a-z]{1,15}" required></textarea>
-              <legend>Hoja de vida</legend>
-              <div class="upload-cv">
-                <div class="fileUpload btn btn-primary">
-                    <span>Subir archivo</span>
-                    <input type="file" class="upload" name="file"/>
-                </div>
-                <div class="value-file"></div>
-              </div>
-              <button id="submit" type="button" class="btn btn-default btn-info" data-dismiss="modal" data-toggle="modal" data-target="#alertmodal" onclick="validateWorkwithUsForm();">enviar</button>
-            </fieldset>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="modal fade workmodal" id="workModal" role="dialog"> </div>
 
 <!-- Modal Contactenos-->
 <div class="modal fade contactmodal" id="contactModal" role="dialog"> </div>
@@ -418,6 +388,14 @@
           $('#contactModal').modal('show');
       });
   });
+
+  $( "#btn-work" ).click(function() {
+      $.get( "{% url 'workwithus' %}", function( data ) {
+          $('#workModal').html(data);
+          $('#workModal').modal('show');
+      });
+  });
+  
 
 </script>
 </body>
